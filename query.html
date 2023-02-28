@@ -8,13 +8,30 @@
 </head>
 
 <body>
+  <style>
+    h1, p {
+    text-align: center;
+  }
+  #content2 {
+    text-decoration: none;
+    text-align: center;
+  }
+  #details {
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+  }
+  </style>
     <h1>Cloud Sender</h1>
-    <p>Any word you type here will be sent to the cloud and back!</p>
-<label for="input">Paste your QueryID Here</label>
-<input id="input" type="text" required="true" maxlength="140">
-<button id="send">Search</button> <br>
-<a href="index.html">Go Back</a>
-<p id="results"></p>
-<script src="script2.js"></script>
+    <p>Json Details will be provided at the bottom of the page</p>
+    <div id="content2">
+      <label for="input">QueryID Here</label>
+      <input id="input" type="text" required="true" maxlength="140">
+      <button id="send">Search</button> <br>
+      <p id="results"></p>
+      <a href="index.html">Go Back</a>
+      <p id="details"></p>
+      <script src="script2.js"></script>
+    </div>
 </body>
 </html>
