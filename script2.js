@@ -1,4 +1,5 @@
 var text = document.getElementById('results');
+var details = document.getElementById('details');
 document.getElementById("send").addEventListener("click", function(){
     var inp = document.querySelector("input").value;
     console.log(inp);
@@ -12,6 +13,7 @@ document.getElementById("send").addEventListener("click", function(){
         info.then(res =>
         res.json()).then(d => {
           console.log(d);
-          text.innerText = "Message: "+d.status+"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Details: "+JSON.stringify(d);
+          text.innerText = "Message: "+d.status
+          details.innerText = "Details: "+JSON.stringify(d);
         });
-})
+});
